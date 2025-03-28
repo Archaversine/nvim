@@ -1,8 +1,8 @@
 # AstroNvim Template
 
-**NOTE:** This is for AstroNvim v4+
+My config files for [AstroNvim](https://github.com/AstroNvim/AstroNvim).
 
-A template for getting started with [AstroNvim](https://github.com/AstroNvim/AstroNvim)
+**NOTE:** This is for AstroNvim v4+
 
 ## 🛠️ Installation
 
@@ -24,7 +24,7 @@ You can also just clone this repository directly if you do not want to track you
 #### Clone the repository
 
 ```shell
-git clone https://github.com/<your_user>/<your_repository> ~/.config/nvim
+git clone https://github.com/archaversine/nvim ~/.config/nvim
 ```
 
 #### Start Neovim
@@ -32,3 +32,11 @@ git clone https://github.com/<your_user>/<your_repository> ~/.config/nvim
 ```shell
 nvim
 ```
+
+#### What I've Added
+
+- Mappings for the Idris2 language
+- Remappings for buffers using <Tab>
+- Remappings for neotree (not finished yet)
+- J/K keybinds to move lines up and down
+
