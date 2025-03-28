@@ -38,7 +38,11 @@ return {
           ["<Leader>ih"] = { function() require("idris2.code_action").expr_search_hints() end , desc = "Expr Search Hints" },
           ["<Leader>in"] = { function() require("idris2.browse").browse()                 end , desc = "Browse Namespace" },
           ["<Leader>ir"] = { function() require("idris2.repl").evaluate()                 end , desc = "Evaluate Expression" },
-        }, 
+        },
+        v = {
+          ["J"] = { ":'<,'>move +2<cr>gv=gv", desc = "Move Selection Down" },
+          ["K"] = { ":'<,'>move -2<cr>gv=gv", desc = "Move Selection Up" },
+        },
         t = {
           -- setting a mapping to false will disable it 
           -- ["<esc>"] = false,
