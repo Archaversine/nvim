@@ -13,7 +13,18 @@ vim.opt.expandtab = true;
 
 vim.g.mapleader = " "
 
-vim.g.clipboard = "xclip"
+--vim.g.clipboard = "wl-clipboard"
+vim.g.clipboard = {
+    name = 'wl-clipboard',
+    copy = {
+        ['+'] = 'wl-copy',
+        ['*'] = 'wl-copy',
+    },
+    paste = {
+        ['+'] = 'wl-paste --no-newline',
+        ['*'] = 'wl-paste --no-newline',
+    }
+}
 
 vim.keymap.set('v', '<leader>y', '"+y')
 vim.keymap.set('v', '<leader>p', '"+p')
