@@ -87,9 +87,23 @@ require("lazy").setup({
 				highlight = { enable = true },
 				indent = { enable = true },
 			})
-		end
+		end,
 	},
 	"echasnovski/mini.pairs",
+    {
+      "obsidian-nvim/obsidian.nvim",
+      version = "*",
+      ft = "markdown",
+      opts = {
+        legacy_commands = false,
+        workspaces = {
+          {
+            name = "rochester",
+            path = "~/Persistent/note-vaults/rochester",
+          },
+        }
+      }
+    }
   },
 
   opts = {
@@ -136,6 +150,13 @@ vim.diagnostic.config({
 
 vim.keymap.set('n', '[d', function() vim.diagnostic.goto_prev() end)
 vim.keymap.set('n', ']d', function() vim.diagnostic.goto_next() end)
+
+-- Obsidian.Nvim Notes
+vim.keymap.set('n', '<Leader>on', ':Obsidian new<CR>')
+vim.keymap.set('n', '<Leader>oo', ':Obsidian open<CR>')
+vim.keymap.set('n', '<Leader>ol', ':Obsidian link<CR>')
+vim.keymap.set('n', '<Leader>os', ':Obsidian search<CR>')
+vim.keymap.set('n', '<Leader>ot', ':Obsidian toggle_checkbox<CR>')
 
 -- File picker
 require "mini.pick".setup()
