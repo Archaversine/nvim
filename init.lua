@@ -10,6 +10,7 @@ vim.opt.shiftwidth = 4;
 vim.opt.swapfile = false;
 vim.opt.guicursor = ""; -- always use block cursor
 vim.opt.expandtab = true;
+vim.opt.colorcolumn="80";
 
 vim.g.mapleader = " "
 
