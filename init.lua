@@ -142,6 +142,7 @@ vim.lsp.config('lua_ls', {
 -- Language Servers
 vim.lsp.enable('hls')
 vim.lsp.enable('lua_ls')
+vim.lsp.enable('pyright')
 
 vim.diagnostic.enable = true
 vim.diagnostic.config({
