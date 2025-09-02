@@ -75,6 +75,7 @@ require("lazy").setup({
 	"neovim/nvim-lspconfig",
 	"nvim-tree/nvim-tree.lua",
 	"echasnovski/mini.pick",
+    "dhruvasagar/vim-table-mode",
 	"AstroNvim/astrotheme",
 	{ 
 		"nvim-treesitter/nvim-treesitter",
@@ -143,6 +144,8 @@ vim.lsp.config('lua_ls', {
 vim.lsp.enable('hls')
 vim.lsp.enable('lua_ls')
 vim.lsp.enable('pyright')
+vim.lsp.enable('clangd')
+vim.lsp.enable('rust_analyzer')
 
 vim.diagnostic.enable = true
 vim.diagnostic.config({
