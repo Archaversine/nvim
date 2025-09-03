@@ -77,7 +77,8 @@ require("lazy").setup({
 	"echasnovski/mini.pick",
     "dhruvasagar/vim-table-mode",
 	"AstroNvim/astrotheme",
-	{ 
+	"itchyny/calendar.vim",
+	{
 		"nvim-treesitter/nvim-treesitter",
 		build = ":TSUpdate",
 		config = function()

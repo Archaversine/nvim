@@ -1,5 +1,6 @@
 {
   "astrotheme": { "branch": "main", "commit": "0a3fb361f1e3d6a0cbb42e93f3d01fb5203b6752" },
+  "calendar.vim": { "branch": "master", "commit": "36d1a3a76e39b9d73ff964db2f75dacaf2d2bef3" },
   "lazy.nvim": { "branch": "main", "commit": "6c3bda4aca61a13a9c63f1c1d1b16b9d3be90d7a" },
   "mini.pairs": { "branch": "main", "commit": "6e1cc569130f25b2c6fa16d8b21b31ddb1420a4a" },
   "mini.pick": { "branch": "main", "commit": "be6490ae9d7038b9f5185d95a8060054f9b23666" },
