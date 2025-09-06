@@ -171,3 +171,11 @@ vim.keymap.set('n', '<leader>ff', ':Pick files<CR>')
 -- File tree
 require("nvim-tree").setup({})
 vim.keymap.set('n', '<C-f>', ':NvimTreeToggle<CR>')
+
+-- Colorscheme
+vim.cmd [[
+  highlight Normal guibg=none
+  highlight NonText guibg=none
+  highlight Normal ctermbg=none
+  highlight NonText ctermbg=none
+]]
